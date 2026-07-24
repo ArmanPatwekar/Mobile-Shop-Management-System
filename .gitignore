@@ -1,0 +1,16 @@
+﻿# Uploaded images (keep folder, ignore contents)
+uploads/*
+!uploads/.gitkeep
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+# Editor files
+.vscode/
+# Unused/obsolete files
+user_home.php
+description.php
+edit.html
+TODO.md
+login.css
+homeCSS.css

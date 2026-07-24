@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Phone Phactory</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:url('background.png') no-repeat center center fixed;background-size:cover;color:#333;min-height:100vh;display:flex;flex-direction:column}
+header{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:14px 30px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 15px rgba(0,0,0,.2)}
+.logo{font-size:1.3em;font-weight:700;letter-spacing:1px;display:flex;align-items:center;gap:6px}
+nav{display:flex;gap:8px}
+nav a{color:#fff;text-decoration:none;padding:8px 18px;border-radius:25px;transition:.3s;font-size:.95em;background:rgba(255,255,255,.1)}
+nav a:hover{background:#e94560;transform:translateY(-2px)}
+.hero-banner{background:linear-gradient(135deg,#0f3460,#e94560);color:#fff;text-align:center;padding:50px 20px;position:relative;overflow:hidden}
+.hero-banner::before{content:'';position:absolute;top:-30px;left:-30px;width:120px;height:120px;background:rgba(255,255,255,.05);border-radius:50%}
+.hero-banner h1{font-size:2.5em;margin-bottom:6px}
+.hero-banner p{font-size:1.1em;opacity:.9}
+.container{flex:1;max-width:850px;margin:30px auto;padding:0 20px;width:100%}
+.card{background:#fff;padding:28px;border-radius:15px;box-shadow:0 4px 20px rgba(0,0,0,.08);margin-bottom:22px}
+.card h2{color:#0f3460;margin-bottom:10px;font-size:1.35em}
+.card p{line-height:1.7;color:#555;font-size:.95em}
+.stats{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin:15px 0}
+.stat{text-align:center;background:#fff;padding:18px 22px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.06);width:140px}
+.stat span{font-size:1.8em;font-weight:700;color:#e94560;display:block}
+.stat small{color:#888;font-size:.85em}
+footer{background:linear-gradient(135deg,#0f3460,#e94560);color:#fff;text-align:center;padding:25px 20px;margin-top:auto}
+footer p{opacity:.9;font-size:.95em;letter-spacing:.5px}
+@media(max-width:600px){
+.hero-banner h1{font-size:1.8em}.hero-banner{padding:35px 15px}
+.card{padding:20px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">📱 PHONE PHACTORY</div>
+<nav>
+<a href="home.html">Home</a>
+<a href="login.html">Login</a>
+</nav>
+</header>
+<section class="hero-banner">
+<h1>About Us</h1>
+<p>Discover the story behind Phone Phactory</p>
+</section>
+<div class="container">
+<div class="card">
+<h2>📱 Welcome to Phone Phactory!</h2>
+<p>We are passionate about bringing you the latest in mobile technology. With a wide range of smartphones, accessories, and services, we aim to cater to all your mobile needs. Whether you're a tech enthusiast or looking for a reliable device, we have something for everyone.</p>
+</div>
+<div class="card">
+<h2>🎯 Our Mission</h2>
+<p>Our mission is to provide high-quality products and exceptional customer service. We believe in offering value for money and ensuring our customers leave with a smile every time they visit us.</p>
+</div>
+<div class="stats">
+<div class="stat"><span>500+</span><small>Products</small></div>
+<div class="stat"><span>10K+</span><small>Happy Customers</small></div>
+<div class="stat"><span>50+</span><small>Brands</small></div>
+</div>
+</div>
+<footer>
+<p>&copy; 2025 Phone Phactory. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

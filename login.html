@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Phone Phactory - Premium Mobile Shop</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:url('background.png') no-repeat center center fixed;background-size:cover;color:#333;min-height:100vh;display:flex;flex-direction:column}
+header{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:14px 30px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 15px rgba(0,0,0,.2)}
+.logo{font-size:1.3em;font-weight:700;letter-spacing:1px;display:flex;align-items:center;gap:6px}
+nav{display:flex;gap:8px}
+nav a{color:#fff;text-decoration:none;padding:8px 18px;border-radius:25px;transition:.3s;font-size:.95em;background:rgba(255,255,255,.1);font-weight:500}
+nav a:hover{background:#e94560;transform:translateY(-2px)}
+.login{flex:1;display:flex;justify-content:center;align-items:center;padding:40px 20px}
+.login-box{background:#fff;padding:35px 30px;border-radius:15px;box-shadow:0 8px 30px rgba(0,0,0,.12);width:100%;max-width:380px;border-top:4px solid #e94560}
+.login-box h2{text-align:center;color:#1a1a2e;font-size:1.7em;margin-bottom:5px;display:flex;align-items:center;justify-content:center;gap:8px}
+.login-box p{text-align:center;color:#888;margin-bottom:25px;font-size:.9em}
+form input[type="text"],form input[type="password"]{width:100%;padding:12px 15px;margin:8px 0;border:2px solid #e0e0e0;border-radius:8px;font-size:.95em;transition:.3s}
+form input:focus{border-color:#e94560;outline:none;box-shadow:0 0 0 3px rgba(233,69,96,.1)}
+form label{font-size:.88em;color:#555;display:flex;align-items:center;gap:6px;margin:12px 0;cursor:pointer}
+form label a{color:#e94560;text-decoration:none;font-weight:600}
+form label a:hover{text-decoration:underline}
+button{width:100%;padding:13px;background:linear-gradient(135deg,#e94560,#0f3460);color:#fff;border:none;border-radius:8px;font-size:1em;cursor:pointer;font-weight:600;transition:.3s;letter-spacing:.5px}
+button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(233,69,96,.4)}
+.links{text-align:center;margin-top:15px;padding-top:12px;border-top:1px solid #f0f0f0}
+.links a{color:#e94560;text-decoration:none;font-size:.9em;font-weight:600}
+.links a:hover{text-decoration:underline}
+.links p{margin:4px 0;font-size:.88em;color:#777}
+.footer-note{text-align:center;margin-top:15px;font-size:.8em;color:#aaa;line-height:1.4}
+footer{background:#1a1a2e;color:#fff;text-align:center;padding:20px;margin-top:auto}
+footer p{opacity:.85;font-size:.9em}
+footer a{color:#e94560;text-decoration:none}
+footer a:hover{text-decoration:underline}
+@media(max-width:768px){
+header{padding:12px 18px}.logo{font-size:1.1em}
+nav a{padding:6px 14px;font-size:.85em}
+}
+@media(max-width:480px){
+header{padding:10px 15px}.logo{font-size:1em}
+nav a{padding:5px 12px;font-size:.8em}
+.login-box{padding:25px 20px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">📱 PHONE PHACTORY</div>
+<nav>
+<a href="home.html">Home</a>
+<a href="Aboutus.html">About Us</a>
+</nav>
+</header>
+<section class="login">
+<div class="login-box">
+<h2>🔐 Welcome Back!</h2>
+<p>Sign in to your account to continue shopping for latest mobile phones &amp; premium accessories</p>
+<form action="login.php" method="POST">
+<input type="text" placeholder="Enter your username" name="username" autocomplete="username" required>
+<input type="password" placeholder="Enter your password" name="password" autocomplete="current-password" required>
+<label><input type="checkbox" name="terms" required> I agree to the terms &amp; conditions of service</label>
+<button type="submit">🔑 Sign In to Your Account</button>
+</form>
+<div class="links">
+<p>Don't have an account? <a href="signup.html">Create a New Account Here</a></p>
+<p>Are you an administrator? <a href="Adminlogin.html">🔒 Access Admin Login</a></p>
+</div>
+<div class="footer-note">By signing in, you agree to our Privacy Policy and Terms of Service</div>
+</section>
+<footer>
+<p>&copy; 2025 Phone Phactory. All rights reserved worldwide.</p>
+<p><a href="home.html">Back to Home</a> | <a href="signup.html">Create New Account</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phone Phactory - Premium Mobile Shop</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:url('background.png') no-repeat center center fixed;background-size:cover;color:#333}
+header{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:14px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 15px rgba(0,0,0,.2)}
+.logo{font-size:1.3em;font-weight:700;letter-spacing:1px;display:flex;align-items:center;gap:8px}
+.nav-links{display:flex;gap:8px;margin-left:auto}
+.nav-links a{color:#fff;text-decoration:none;padding:8px 18px;border-radius:25px;transition:.3s;font-size:.95em;background:rgba(255,255,255,.1)}
+.nav-links a:hover{background:#e94560;transform:translateY(-2px)}
+.hero{background:linear-gradient(135deg,#0f3460,#e94560,#1a1a2e);background-size:300% 300%;animation:grad 10s ease infinite;color:#fff;text-align:center;padding:60px 20px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,.03) 1px,transparent 1px);background-size:30px 30px;pointer-events:none}
+@keyframes grad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.hero h1{font-size:2.5em;margin-bottom:12px;text-shadow:2px 2px 10px rgba(0,0,0,.3)}
+.hero p{font-size:1.15em;margin-bottom:22px;opacity:.95}
+.hero button{background:#fff;color:#0f3460;border:none;padding:13px 34px;font-size:1.05em;cursor:pointer;border-radius:50px;font-weight:600;transition:.3s;box-shadow:0 5px 20px rgba(233,69,96,.4)}
+.hero button:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(233,69,96,.6)}
+#heading{text-align:center;margin:40px 0 20px;font-size:1.8em;font-weight:700;color:#1a1a2e}
+#heading::after{content:'';display:block;width:50px;height:3px;background:#e94560;margin:8px auto;border-radius:2px}
+.categories{display:flex;justify-content:center;gap:35px;padding:20px 20px 40px;flex-wrap:wrap}
+.category-card{text-align:center;background:#fff;padding:25px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,.08);transition:.4s;cursor:pointer;width:190px;position:relative;overflow:hidden}
+.category-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,#0f3460,#e94560);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.category-card:hover::before{transform:scaleX(1)}
+.category-card:hover{transform:translateY(-10px);box-shadow:0 12px 30px rgba(0,0,0,.15)}
+.category-card img{width:120px;height:120px;object-fit:contain;border-radius:50%;padding:8px;background:#f0f2f5;transition:.4s}
+.category-card:hover img{transform:scale(1.1) rotate(-5deg)}
+.category-card p{margin-top:12px;font-weight:600;font-size:1.05em}
+.features{display:flex;justify-content:center;gap:30px;padding:10px 20px 30px;flex-wrap:wrap}
+.feature{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.06);text-align:center;width:180px}
+.feature span{font-size:2em;display:block;margin-bottom:6px}
+.feature p{font-weight:600;color:#1a1a2e;font-size:.95em}
+.faq{padding:20px;max-width:700px;margin:0 auto}
+.faq h2{text-align:center;color:#1a1a2e;margin-bottom:15px}
+.faq-item{background:#fff;padding:15px 20px;border-radius:10px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.faq-item strong{color:#0f3460;display:block;margin-bottom:4px}
+.faq-item p{color:#666;font-size:.9em;line-height:1.5}
+footer{background:#1a1a2e;color:#fff;text-align:center;padding:25px 20px;margin-top:20px}
+footer a{color:#e94560;text-decoration:none;margin:0 8px}
+footer a:hover{text-decoration:underline}
+@media(max-width:768px){
+.hero h1{font-size:1.6em}.hero{padding:35px 20px}
+.nav-links a{padding:6px 14px;font-size:.85em}
+.category-card{width:150px}.category-card img{width:90px;height:90px}
+#heading{font-size:1.3em}.feature{width:140px}
+}
+@media(max-width:480px){
+.category-card{width:130px}.category-card img{width:75px;height:75px}
+.hero h1{font-size:1.3em}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">📱 PHONE PHACTORY</div>
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="login.html">Login</a>
+<a href="Aboutus.html">About Us</a>
+</div>
+</header>
+<section class="hero">
+<h1>Welcome to the Best Mobile Shop!</h1>
+<p>Your one-stop shop for the latest mobile phones &amp; accessories.</p>
+<button onclick="location.href='login.html'">🛒 Shop Now</button>
+</section>
+<h2 id="heading">Browse Our Categories</h2>
+<div class="categories">
+<div class="category-card"><img src="iphone.PNG" alt="Smartphones"><p>📱 Smartphones</p></div>
+<div class="category-card"><img src="accessories.PNG" alt="Accessories"><p>🎧 Accessories</p></div>
+<div class="category-card"><img src="smartwatches.PNG" alt="Smartwatches"><p>⌚ Smartwatches</p></div>
+</div>
+<div class="faq">
+<h2>❓ Quick FAQs</h2>
+<div class="faq-item"><strong>How do I order?</strong><p>Simply browse our categories, click Shop Now, create an account, and place your order.</p></div>
+<div class="faq-item"><strong>What is the delivery time?</strong><p>Standard delivery takes 3-5 business days. Express shipping is also available.</p></div>
+</div>
+<h2 id="heading">Why Choose Us</h2>
+<div class="features">
+<div class="feature"><span>🚚</span><p>Free Shipping</p></div>
+<div class="feature"><span>🛡️</span><p>1 Year Warranty</p></div>
+<div class="feature"><span>💯</span><p>100% Genuine</p></div>
+<div class="feature"><span>📞</span><p>24/7 Support</p></div>
+</div>
+<footer>
+<p>&copy; 2025 Phone Phactory. All Rights Reserved.</p>
+<p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+</footer>
+<script>
+(function(){const h=new Date().getHours();let g='Good Morning!';if(h>=12&&h<18)g='Good Afternoon!';else if(h>=18)g='Good Evening!';document.querySelector('.hero p').textContent=g+' Your one-stop shop for latest mobile phones & accessories.'})();
+document.querySelectorAll('.category-card').forEach(c=>{c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top,mx=r.width/2,my=r.height/2;c.style.transform=`perspective(600px) rotateX(${(y-my)/my*-8}deg) rotateY(${(x-mx)/mx*8}deg) scale(1.03)`});c.addEventListener('mouseleave',()=>{c.style.transform='perspective(600px) rotateX(0) rotateY(0) scale(1)'})});
+let ls=0;window.addEventListener('scroll',()=>{const cs=window.scrollY;document.querySelector('header').style.boxShadow=cs>100?'0 4px 20px rgba(0,0,0,.3)':'0 2px 15px rgba(0,0,0,.2)';ls=cs});
+</script>
+</body>
+</html>

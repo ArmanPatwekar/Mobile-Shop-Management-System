@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login | Phone Phactory - Admin Panel</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:url('background.png') no-repeat center center fixed;background-size:cover;color:#333;min-height:100vh;display:flex;flex-direction:column}
+header{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:14px 30px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 15px rgba(0,0,0,.2)}
+.logo{font-size:1.3em;font-weight:700;letter-spacing:1px;display:flex;align-items:center;gap:6px}
+nav{display:flex;gap:8px}
+nav a{color:#fff;text-decoration:none;padding:8px 18px;border-radius:25px;transition:.3s;font-size:.95em;background:rgba(255,255,255,.1)}
+nav a:hover{background:#e94560;transform:translateY(-2px)}
+.main{flex:1;display:flex;justify-content:center;align-items:center;padding:40px 20px}
+.login-box{background:#fff;padding:35px 30px;border-radius:15px;box-shadow:0 8px 30px rgba(0,0,0,.12);width:100%;max-width:380px;border-top:4px solid #e94560}
+.login-box h2{text-align:center;color:#1a1a2e;font-size:1.6em;margin-bottom:4px}
+.login-box .sub{text-align:center;color:#888;font-size:.9em;margin-bottom:6px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;margin-bottom:5px;font-weight:600;color:#555;font-size:.88em}
+.form-group input{width:100%;padding:12px 15px;border:2px solid #e0e0e0;border-radius:8px;font-size:.95em;transition:.3s}
+.form-group input:focus{border-color:#e94560;outline:none;box-shadow:0 0 0 3px rgba(233,69,96,.1)}
+.form-group button{width:100%;padding:13px;background:linear-gradient(135deg,#0f3460,#1a1a2e);color:#fff;border:none;border-radius:8px;font-size:1em;cursor:pointer;font-weight:600;transition:.3s;letter-spacing:.5px}
+.form-group button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(15,52,96,.4)}
+.links{text-align:center;margin-top:12px;padding-top:12px;border-top:1px solid #f0f0f0}
+.links a{color:#e94560;text-decoration:none;font-size:.9em;font-weight:600;display:inline-block;margin:3px 6px}
+.links a:hover{text-decoration:underline}
+.badge{display:inline-block;background:linear-gradient(135deg,#e94560,#d63851);color:#fff;padding:5px 16px;border-radius:20px;font-size:.75em;font-weight:700;margin-bottom:8px;letter-spacing:1px}
+.icon-shield{text-align:center;font-size:2em;margin-bottom:5px}
+.admin-tip{text-align:center;font-size:.78em;color:#aaa;margin-top:12px;line-height:1.4}
+footer{background:#1a1a2e;color:#fff;text-align:center;padding:20px;margin-top:auto}
+footer p{opacity:.85;font-size:.9em}
+footer a{color:#e94560;text-decoration:none}
+@media(max-width:768px){
+header{padding:12px 18px}.logo{font-size:1.1em}
+nav a{padding:6px 14px;font-size:.85em}
+}
+@media(max-width:480px){
+header{padding:10px 15px}.logo{font-size:1em}
+nav a{padding:5px 12px;font-size:.8em}
+.login-box{padding:25px 20px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">📱 PHONE PHACTORY</div>
+<nav>
+<a href="home.html">Home</a>
+<a href="Aboutus.html">About Us</a>
+</nav>
+</header>
+<div class="main">
+<div class="login-box">
+<div class="icon-shield">🛡️</div>
+<div style="text-align:center"><span class="badge">🔒 ADMIN PANEL</span></div>
+<h2>Admin Login</h2>
+<p class="sub">Secure access for authorized administrators only</p>
+<form action="AdminLogin.php" method="POST">
+<div class="form-group">
+<label for="AdminName">Admin Username</label>
+<input type="text" id="AdminName" name="AdminName" placeholder="Enter admin username" required>
+</div>
+<div class="form-group">
+<label for="AdminPassword">Password</label>
+<input type="password" id="AdminPassword" name="AdminPassword" placeholder="Enter your password" required>
+</div>
+<div class="form-group">
+<button type="submit" name="Login">🔐 Login to Dashboard</button>
+</div>
+</form>
+<div class="links">
+<p><a href="login.html">← Back to User Login</a></p>
+<p><a href="home.html">🏠 Return to Home Page</a></p>
+</div>
+<div class="admin-tip">⚠️ This area is restricted. Only authorized administrators with valid credentials can access this admin panel.</div>
+</div>
+</div>
+<footer>
+<p>&copy; 2025 Phone Phactory. All rights reserved.</p>
+</footer>
+</body>
+</html>
